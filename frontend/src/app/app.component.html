@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>String Calculator</h1>
+  <textarea
+    [(ngModel)]="numbers"
+    rows="5"
+    cols="40"
+    placeholder="Enter numbers separated by commas or newlines"
+  ></textarea>
+  <br />
+  <button (click)="calculate()">Calculate</button>
+  <p *ngIf="result !== null">Result: {{ result }}</p>
+  <p *ngIf="error" style="color: red;">Error: {{ error }}</p>
+</div>
