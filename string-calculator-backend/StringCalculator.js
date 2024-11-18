@@ -1,3 +1,3 @@
 class StringCalculator {
 }
-module.exports = StringCalculator;
+module.exports = StringCalculator; 
