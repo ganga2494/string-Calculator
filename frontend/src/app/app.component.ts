@@ -16,6 +16,8 @@ export class AppComponent {
   async calculate() {
     this.result = null;
     this.error = null;
+    this.numbers = this.numbers.replace(/\\n/g, '\n');
+
     try {
       this.result = await this.calculatorService.add(this.numbers);
     } catch (err:any) {
