@@ -18,6 +18,9 @@ describe('StringCalculator', () => {
     });
     test('should handle multiple comma-separated numbers', () => {
         expect(calculator.add("1,2,3,4")).toBe(10);
-      });
+    });
+    test('should handle newlines as delimiters', () => {
+        expect(calculator.add("1\n2,3")).toBe(6);
+    });
 
 });
